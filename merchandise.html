@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Profile - (G)I-DLE</title>
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="img/(G)I-dle_logo.svg.png" alt="(G)I-DLE Logo" class="logo">
+            <span class="logo-text">(G)I-DLE</span>
+        </h1>
+    </header>
+    
+    <div class="container">
+        <nav>
+            <a href="index.html" class="home">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="shows.html">Shows</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="merchandise.html" class="active">Merchandise</a> <!-- Underlined when on merchandise.html -->
+            <a href="socials.html">Socials</a>
+        </nav>
+     </div>
+
+        <div class="merchandise">
+            <h2>Merchandise</h2>
+            <div class="text-box" style="padding: 10px; border:3px solid #ccc; margin-top: 10px; font-weight: bold; font-size: 20px">
+            APPARELS
+            </div>
+        </div>
+
+        <div class="shirt-merchandise">
+            <div class="shirt-gidle-box">
+                <img src="img/gidleshirtfront1.webp" alt="shirt 1" class="normal" onclick="addToCart()">
+                <img src="img/gidleshirtback1.webp" alt="shirt 1 Hover" class="hover" onclick="addToCart()">
+            </div>
+        
+            <div class="shirt-gidle-box">
+                <img src="img/gidlebagfront.webp" alt="bag 2" class="normal" onclick="addToCart()">
+                <img src="img/gidlebackbag.webp" alt="bag 2 Hover" class="hover" onclick="addToCart()">
+            </div>
+
+            <div class="shirt-gidle-box">
+                <img src="img/gidlecapfront.jpg" alt="cap 3" class="normal" onclick="addToCart()">
+                <img src="img/gidlecapback.webp" alt="cap 3 Hover" class="hover" onclick="addToCart()">
+            </div>
+        </div>
+    </div>
+
+    <div class="text-box" style="padding: 10px; border:3px solid #ccc; margin-top: 10px; font-weight: bold; font-size: 20px">
+        ALBUMS
+    </div>
+
+    <div class="album-grid">
+        <div class="album-merch">
+            <img src="img/albumimg1.png" alt="Album 1" onclick="addToCart()">
+            <div class="album-info">I SWAY Album $10.99</div>
+        </div>
+        <div class="album-merch">
+            <img src="img/albumimg2.png" alt="Album 2" onclick="addToCart()">
+            <div class="album-info">2 Album $12.99</div>
+        </div>
+        <div class="album-merch">
+            <img src="img/albumimg3.png" alt="Album 3" onclick="addToCart()">
+            <div class="album-info">I Feel Album $9.99</div>
+        </div>
+        <div class="album-merch">
+            <img src="img/albumimg4.png" alt="Album 4" onclick="addToCart()">
+            <div class="album-info">I Never Die Album $12.42</div>
+        </div>
+        <div class="album-merch">
+            <img src="img/albunimg5.png" alt="Album 5" onclick="addToCart()">
+            <div class="album-info"> HEAT Album $8.87</div>
+        </div>
+        <div class="album-merch">
+            <img src="img/albumimg6.png" alt="Album 6" onclick="addToCart()">
+            <div class="album-info">I Love Album $16.68</div>
+        </div>
+        <div class="album-merch">
+            <img src="img/albumimg7.png" alt="Album 7" onclick="addToCart()">
+            <div class="album-info">I Burn Album $14.99</div>
+        </div>
+        <div class="album-merch">
+            <img src="img/albumimg8.png" alt="Album 8" onclick="addToCart()">
+            <div class="album-info">I Trust ALbum $12.94</div>
+        </div>
+        <div class="album-merch">
+            <img src="img/albumimg9.png" alt="Album 9" onclick="addToCart()">
+            <div class="album-info">I Am Album $8.54</div>
+        </div>
+        <div class="album-merch">
+            <img src="img/albumimg10.png" alt="Album 10" onclick="addToCart()">
+            <div class="album-info">Miyeon Solo Album "MY" $13.23</div>
+        </div>
+        <div class="album-merch">
+            <img src="img/yuq1album.jpg" alt="Album 11" onclick="addToCart()">
+            <div class="album-info">Yuqi Solo Album "YUQ1" $13.23</div>
+        </div>
+        <div class="album-merch">
+            <img src="img/albumimg12.png" alt="Album 12" onclick="addToCart()">
+            <div class="album-info">THE BADDEST $12.35</div>
+        </div>
+    </div>        
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Profile - (G)I-DLE</title>
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="img/(G)I-dle_logo.svg.png" alt="(G)I-DLE Logo" class="logo">
+            <span class="logo-text">(G)I-DLE</span>
+        </h1>
+    </header>
+    
+    <div class="container">
+        <nav>
+            <a href="index.html" class="home">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="shows.html">Shows</a>
+            <a href="portfolio.html" class="active">Portfolio</a> <!-- Underlined when on portfolio.html -->
+            <a href="merchandise.html">Merchandise</a>
+            <a href="socials.html">Socials</a>
+        </nav>
+    </div>
+    <div class="portfolio">
+        <h2>Portfolio</h2>
+    </div>
+      
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#photos" onclick="showPortfolioPhotos();">Photos</a>
+          <a href="#videos" onclick="showPortfolioVideos();">Videos</a>
+          <a href="#audios" onclick="showPortfolioAudios();">Audios</a>
+        </div>
+    </div>
+
+    <div class="portfolioPhotos" id="portfolioPhotos">
+        <img src="img/(G)I-dle.jpg" alt="Gidle I Feel Photo 1">
+        <img src = "img/gidlecomback2.jpg " alt="Gidle 2 Photo 2">
+        <img src="img/gidlenxdepoto.jpg" alt= "gidle i love photo3">
+    </div>
+    <div class="portfolioVideos" id="portfolioVideos">
+        <div class="video-grid">
+       <p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/H0WnO1Hq2xk?si=nzkLf8mm8xcADAWr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6iIA3p3DjvM?si=NWHj8UQC1sm0JxCC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/L2ancO9U57s?si=NVH9Oa6eBWP4vOhi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/yv8LV7DuPDc?si=h-20Qyy9bY2s_rtV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DBvpYum2zeg?si=UK-UA4vstKhsOFzH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ABZYhlFir1s?si=IWP4gHFxS8BrwZ7r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </p> 
+        </div>
+    </div>
+    <div class="portfolioAudios" id="portfolioAudios">
+        <h2>Audio Portfolio</h2>
+        <div class="audio-list">
+            <audio controls>
+                <source src="img/2023mp31.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <p>2023 MAMA AUDIO</p>
+            
+            <audio controls>
+                <source src="img/2024 (G)I-DLE WORLD TOUR [i-DOL] 비하인드 EP.07 _ (여자)아이들 ((G)I-DLE)ㅣSUB.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <p>(G)I-DLE WORLD TOUR [i-DOL] ep1.0</p>
+            
+            <audio controls>
+                <source src="img/2024mp32.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <p>(G)I-DLE WORLD TOUR [i-DOL] ep2.0</p>
+            
+            <audio controls>
+                <source src="img/2023mp33.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <p>(G)I-DLE WORLD TOUR [i-DOL] ep3.0</p>
+        </div>
+    </div>
+
+      
+    <script type="text/javascript">
+        window.onload = function(){
+
+        document.getElementById("portfolioVideos").style.display='none';
+        document.getElementById("portfolioAudios").style.display='none';
+        };
+
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+            }
+        }
+        }
+        //show sellected
+        function showPortfolioVideos() { //this works ,  checked
+            var htmlShowVideos = document.getElementById("portfolioVideos");
+            var htmlAudios = document.getElementById("portfolioAudios"); 
+            var htmlPhotos = document.getElementById("portfolioPhotos"); 
+            if (htmlShowVideos.style.display === "none") {
+                htmlShowVideos.style.display = "block";
+                htmlAudios.style.display = "none";
+                htmlPhotos.style.display = "none";
+            } 
+        }function showPortfolioAudios() { //this works , logic checked
+            var htmlShowAudios = document.getElementById("portfolioAudios");
+            var htmlVideos = document.getElementById("portfolioVideos"); 
+            var htmlPhotos = document.getElementById("portfolioPhotos"); 
+            if (htmlShowAudios.style.display === "none") {
+                htmlShowAudios.style.display = "block";
+                htmlVideos.style.display = "none";
+                htmlPhotos.style.display = "none";
+            } 
+        }
+        function showPortfolioAudios() { //this works , logic checked
+            var htmlShowAudios = document.getElementById("portfolioAudios");
+            var htmlVideos = document.getElementById("portfolioVideos"); 
+            var htmlPhotos = document.getElementById("portfolioPhotos"); 
+            if (htmlShowAudios.style.display === "none") {
+                htmlShowAudios.style.display = "block";
+                htmlVideos.style.display = "none";
+                htmlPhotos.style.display = "none";
+            } 
+        }
+        function showPortfolioPhotos() { 
+            var htmlShowPhotos = document.getElementById("portfolioPhotos");
+            var htmlVideos = document.getElementById("portfolioVideos"); 
+            var htmlAudios = document.getElementById("portfolioAudios"); 
+            if (htmlShowPhotos.style.display === "none") {
+                htmlShowPhotos.style.display = "block";
+                htmlVideos.style.display = "none";
+                htmlAudios.style.display = "none";
+            } 
+        }
+
+    </script>
+        
+    <script src="script.js"></script>
+</body>
+</html>
